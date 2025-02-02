@@ -38,3 +38,40 @@ print(str2)
 
 str3 = 'he said,\'I love him\''
 print(str3);
+
+##CANCATENATION OF STRINGS
+
+string1 = "your";
+string2 = "face";
+
+print(string1 + string2)
+
+string3 = "";
+
+string3 += string1 + string2
+print(string3);
+
+x = 10
+# Formated strings in python 
+formattedString = f"I have told you {x} times not do these things";
+print(formattedString);
+
+x = 20
+stringformat = "I have told you {} times not do these things".format(x);
+
+print(stringformat);
+
+# string = "hello world"
+
+# for i in string:
+#     print(string[i])
+
+decimal = 12.232323;
+digit = int(decimal);
+print("The number as a decimal",decimal);
+print("The number as an int",digit);
+
+
+print(str(10));
+
+
