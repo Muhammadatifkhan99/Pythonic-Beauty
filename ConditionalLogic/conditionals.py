@@ -43,7 +43,43 @@
 # if city == "los angeles" or city == "san franciscio":
 #     print ("you live in california")
 
-age = 25;
+# age = 25;
 
-if not ((age >= 2 and age <=8)or age >=65):
-    print("You pay 10 dollars as you are not a senior citizen")
+# if not ((age >= 2 and age <=8)or age >=65):
+#     print("You pay 10 dollars as you are not a senior citizen")
+
+
+#is and ==
+
+#is checks if they are stored in the same place in memory and == checks that they are the same values
+
+
+# age = input("Enter your age: ")
+# if age != "":
+#     age = int(age);
+#     if age >= 18 and age < 21:
+#         print("You can enter, but need a wristband")
+#     elif age >= 21:
+#         print("You are good to enter and can drink")
+#     else: 
+#         print("You cannot come in, little one")
+# else:
+#     print("Please enter a valid integer")
+
+
+age = input("Enter your age: ")
+if age != "":
+    age = int(age);
+    if age >= 21:
+        print("You are good to enter and can drink")
+    elif age >= 18:
+        print("You can enter but you need a wristband")
+    else: 
+        print("You cannot come in, little one")
+else:
+    print("Please enter a valid integer")
+
+
+
+
+
