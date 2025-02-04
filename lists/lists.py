@@ -90,3 +90,9 @@ numbers[1:3] = ["a","b","c"]
 
 print("After: ",numbers)
 
+names = ["James", "Michelle"]
+print(names)
+
+names[0], names[1] = names[1], names[0]
+
+print(names)
