@@ -13,6 +13,10 @@ elif player1 == "paper" and player2 == "rock":
     print("player1 wins!")
 elif player1 == "paper" and player2 == "scissors":
     print("player2 wins")
+elif player1 == "scissors" and player2 == "rock":
+    print("player2 wins!")
+elif player1 == "scissors" and player2 == "paper":
+    print("player1 wins")
 elif player1 == player2:
     print("its a tie!")
 else: 
