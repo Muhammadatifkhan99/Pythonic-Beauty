@@ -24,13 +24,13 @@
 # for x in range(n):
 #     print(f"time {x}: Clean up your room")
 
-# for x in range(1,20):
-#     if x == 4 or x == 13:
-#         print(f"{x}: is unlucky")
-#     if x % 2 == 0:
-#         print(f"{x}: is even")
-#     if x % 2 != 0:
-#         print(f"{x}: is odd")
+for x in range(1,20):
+    if x == 4 or x == 13:
+        print(f"{x}: is unlucky")
+    if x % 2 == 0:
+        print(f"{x}: is even")
+    if x % 2 != 0:
+        print(f"{x}: is odd")
 
 # msg = input("What is the secret password: ")
 
@@ -57,7 +57,7 @@
 #     msg = input(f"{msg}\n")
 # print("UGH You Win")
 
-times = input("How many times do I have to tell you? ")
+times = input("How many times do I have to tell you?, to clean your room: ")
 times = int(times)
 for time in range(1,times):
     print("CLEAN UP YOUR ROOM")
