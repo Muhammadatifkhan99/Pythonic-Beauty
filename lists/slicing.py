@@ -31,4 +31,11 @@ print(lst[0::])
 
 print(color[5][::-1]) #reverses the 5th value from the list
 
+#SWAPPING IN LISTS
+
+names = ["Khan","Ali"]
+print(names)
+names[0],names[1] = names[1],names[0]
+print(names)
+
 
