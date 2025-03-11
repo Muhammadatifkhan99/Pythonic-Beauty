@@ -42,3 +42,33 @@ if "n" in instructor:
     print("all is well")
 else: 
     print(False)
+
+
+d = instructor
+#d.clear() #clears out everything from a dictionary
+print(d)
+
+#copy---copy a dictionary
+#they are unique objects in memory
+clone = instructor.copy()
+
+print(clone)
+
+print(clone is instructor) #is checks for the reference in memory
+
+# is checks identity (whether two variables reference the same object in memory).
+# == checks equality (whether two objects have the same value).
+
+#FROM KEYS fromkeys()---use to generate default values, its need an iterable collection to be passed into it.
+
+new_user = {}.fromkeys(['name','age','password','bio','website'],'unknown') #set all the values of the list to unknown
+
+print(new_user)
+new = {}
+new.fromkeys('phone','unknown')
+print(new)
+
+
+#get
+
+print(instructor.get('name'),instructor.get("email")) #if a key is not present we get the None Error
