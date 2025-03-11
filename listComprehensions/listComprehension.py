@@ -45,3 +45,52 @@ colors = ["red","orange","yellow","blue","indigo","violet"]
 # >>> [color.upper() for color in colors]
 # ['RED', 'ORANGE', 'YELLOW', 'BLUE', 'INDIGO', 'VIOLET']
 #############################################################################################
+
+
+
+
+
+#################################################################################################################################################################################
+#                                                               Conditional Logic in List Comprehension
+#################################################################################################################################################################################
+
+
+numbers = [1,2,3,4,5]
+
+
+even = [num for num in numbers if num % 2 == 0]
+print("The even numbers are: ",even)
+
+odd = [num for num in numbers if num % 2 != 0]
+print("The odd numbers are: ",odd)
+################################################################################################################################################################################
+
+with_vowels = "This is much fun!"
+print(' '.join([char for char in with_vowels if char not in "aeiou"]))
+########################################################################################################################################
+#                                                               Nested List
+########################################################################################################################################
+#list inside of other list, multi dimensional list
+
+
+nest_listed = [[1,2,3],[4,5,6],[7,8,9]]
+
+print(nest_listed[1][1])
+print(nest_listed[1][-1])
+
+#using loop to print nested list
+
+for n in nest_listed:
+    for val in n:
+        print(val)
+
+
+
+board = [[n for n  in range(1,4)] for val in range(1,4)]
+print(board)
+
+print([["X" if num % 2 != 0 else "O" for num in range(1,4)] for val in range(1,4)])
+
+
+
+
