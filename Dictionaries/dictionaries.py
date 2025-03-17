@@ -97,10 +97,35 @@ person = {"city" : "ISB"}
 print(person)
 print(instructor)
 
-person.update(instructor) #the values of the person dictionaries are added to theinstructor dictionaries
+person.update(instructor) #the values of the person dictionaries are added to the instructor dictionaries
 
 print(person) # person is modified
 print(instructor) #while instructor will be the same as it is.
 
 person["name"] = "Ali"
 print(person)
+
+
+
+#Dictionary Comprehensions
+print("Dictionary Comprehsions")
+
+nums = dict(first = 1, second = 2, third = 3)
+
+squared_nums = {key: value ** 2 for key, value in nums.items()}
+print(squared_nums)
+
+print({num: num**2 for num in [1,2,3,4,5]}) #this is making a new dictionary but starting with a list
+
+instructor = {
+    "name" : "atif",
+    "city": "san francisco",
+    "color": "purple"
+}
+print(instructor)
+
+print({k.upper(): v.upper() for k,v in instructor.items()})
+
+nums_list = [1,2,3,4,5,6,7,8]
+
+print({num:("even" if num % 2 == 0 else "odd") for num in nums_list})
