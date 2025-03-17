@@ -72,3 +72,35 @@ print(new)
 #get
 
 print(instructor.get('name'),instructor.get("email")) #if a key is not present we get the None Error
+
+
+
+###############################################################////POP##############
+
+print(instructor.pop("owns_dog")) #takes in a key and remove the corresponding value from it, returns the actual value.
+
+
+
+
+
+#############POP_ITEM#################
+#removes a random value from the dictionary
+#no key is provided just picks a random number and removes that
+print(instructor.popitem())
+
+
+
+########update method############
+
+person = {"city" : "ISB"}
+
+print(person)
+print(instructor)
+
+person.update(instructor) #the values of the person dictionaries are added to theinstructor dictionaries
+
+print(person) # person is modified
+print(instructor) #while instructor will be the same as it is.
+
+person["name"] = "Ali"
+print(person)
