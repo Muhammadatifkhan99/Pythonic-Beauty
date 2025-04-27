@@ -15,7 +15,7 @@
 # l1 = ["atif","ali","khan","sahal","umair"]
 
 # l2 = [1,2,3,4,5,6]
-#the while loop allow us to have access to the loop counter variable while for does not
+#the while loop allow us to have access to the loop counter variable but the for loop does not
 # i = 0;
 # while i<len(l1):
 #     print(f"{i}: {l1[i]}")
