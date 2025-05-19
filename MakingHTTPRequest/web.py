@@ -14,11 +14,20 @@ res = requests.get(url)
 # print(res2.status_code)
 
 
-url1 = "https://icanhazdadjoke.com/"
+url1 = "https://icanhazdadjoke.com/search"
 
-res1 = requests.get(url1, headers={"Accept" : "text/plain"})
+# res1 = requests.get(url1, headers={"Accept" : "text/plain"})
 
-print(res1.text)
+# print(res1.text)
+
+
+res1 = requests.get(url1,
+                     headers={"Accept" : "application/json"},
+                     params={
+                         "term" : "cat","limit" : 1}
+                     )
+
+print(res1.json()["results"])
 
 
 
