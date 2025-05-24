@@ -23,11 +23,23 @@
 # f.seek(0) #set the cursor to the start of the file
 # print(f.read())
 
-with open("/home/atif/Lab/Pythonic-Beauty/FileI/story.txt","a") as f:
-    f.write("We believe in concept\n")
-    f.write("because all the great people were not toppers\n")
+# with open("/home/atif/Lab/Pythonic-Beauty/FileI/story.txt","a") as f:
+#     f.write("We believe in concept\n")
+#     f.write("because all the great people were not toppers\n")
 
 
 
 
 # print(f.closed)
+
+
+# with open("/home/atif/Lab/Pythonic-Beauty/FileI/story.txt","a") as f:
+#     # f.seek(0) no control on the cursor in the append mode
+#     f.write(":)\n")
+
+with open("/home/atif/Lab/Pythonic-Beauty/FileI/story.txt","r+") as f:
+    f.seek(0)
+    f.write(":)\n")
+
+
+
