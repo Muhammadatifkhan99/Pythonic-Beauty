@@ -56,10 +56,10 @@
 # formattedString = f"I have told you {x} times not do these things";
 # print(formattedString);
 
-# x = 20
-# stringformat = "I have told you {} times not do these things".format(x);
+x = 20
+stringformat = "I have told you {} times not do these things".format(x);
 
-# print(stringformat);
+print(stringformat);
 
 # # string = "hello world"
 
@@ -78,9 +78,14 @@
 # data = input("What is your name: ")
 # print("You entered"+ data);
 
-# print("What is you name: ")
+# print("What is your name: ")
 # dataa = input()
-# print(dataa)
+# print('Hello, ',dataa)
+
+
+print("Hello World")
+
+
 
 
 
