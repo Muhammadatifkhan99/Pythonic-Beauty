@@ -1,15 +1,31 @@
-# x = 100;
+x = 100;
 
-# khaleesi_mother_of_dragons = 1;
+print(type(9))
+print(type(9.2))
 
-# print(khaleesi_mother_of_dragons + x);
+print(1 + 1.0) #if any part of the expression is a float the result will be a float
+
+a = 1 + 1.0;
+print(type(a))
+
+#this division returns a float
+
+print(1/3); #even if dividing ints
 
 
-# some_string = "8"
-# print(some_string);
 
-# list = [1,2,3]
-# print(list);
+khaleesi_mother_of_dragons = 1
+
+print(khaleesi_mother_of_dragons + x)
+
+
+some_string = "8"
+print(some_string)
+
+list = [1,2,3]
+list1 = ["a","b","c"]
+print(list)
+print(list1)
 
 # #python is dynamically typed so it allows us to change data types of the data....e.g from int to string and vice verse
 
@@ -17,7 +33,7 @@
 # print(awesomeness)
 
 # awesomeness = "a dog"
-# print(awesomeness)
+# print(awesvomeness)
 
 # awesomeness = None #this represnet nothingness in python just the null in SQL and other languages
 # print(awesomeness)
