@@ -1,7 +1,7 @@
-# name = input()
-
+# name = input("Enter your name: ")
+#
 # if name == "Arya Stark":
-#     print("Valar Morghulis");
+#     print("Valar Morghulis")
 # elif name == "Jon Snow":
 #     print("You know nothing")
 # else:
@@ -11,7 +11,7 @@
 #Multiple Elif statements
 
 # color = input()
-
+#
 # if color == "purple":
 #     print("Excellent Choice")
 # elif color == "teal":
@@ -21,8 +21,19 @@
 # elif color == "pure darkness":
 #     print("I like how you think")
 # else:
-#     print("I like how you think");
+#     print("I like how you think")
 
+#Truthiness
+
+# in python all condiational checks resolve to true or false.
+# we can call values that will resolve to true "truthy", or values that will resolve to false "falsy"
+# beside conditioanls ckecks, other things that are naturally falsy include: empty objects, empty strings, None and Zero
+
+if 0:
+    print("Zero")
+
+if 1:
+    print("hello")
 
 
 # animal = input("Enter you favourite animal")
@@ -67,17 +78,17 @@
 #     print("Please enter a valid integer")
 
 
-age = input("Enter your age: ")
-if age != "":
-    age = int(age);
-    if age >= 21:
-        print("You are good to enter and can drink")
-    elif age >= 18:
-        print("You can enter but you need a wristband")
-    else: 
-        print("You cannot come in, little one")
-else:
-    print("Please enter a valid integer")
+# age = input("Enter your age: ")
+# if age != "":
+#     age = int(age);
+#     if age >= 21:
+#         print("You are good to enter and can drink")
+#     elif age >= 18:
+#         print("You can enter but you need a wristband")
+#     else:
+#         print("You cannot come in, little one")
+# else:
+#     print("Please enter a valid integer")
 
 
 
