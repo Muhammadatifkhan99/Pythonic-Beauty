@@ -29,14 +29,14 @@
 # we can call values that will resolve to true "truthy", or values that will resolve to false "falsy"
 # beside conditioanls ckecks, other things that are naturally falsy include: empty objects, empty strings, None and Zero
 
-if 0:
-    print("Zero")
+# if 0:
+#     print("Zero")
+#
+# if 1:
+#     print("hello")
 
-if 1:
-    print("hello")
-
-
-# animal = input("Enter you favourite animal")
+# Logical Operators:
+# animal = input("En ter you favourite animal")
 
 # if(animal):
 #     print(animal + " is also my favourite")
@@ -50,14 +50,20 @@ if 1:
 #Logical OR
 
 # city = input()
-
+#
 # if city == "los angeles" or city == "san franciscio":
 #     print ("you live in california")
+# else:
+#     print("your live somewhere else")
+
+
 
 # age = 25;
-
+#
 # if not ((age >= 2 and age <=8)or age >=65):
 #     print("You pay 10 dollars as you are not a senior citizen")
+# else:
+#     print("You are a senior citizen")
 
 
 #is and ==
