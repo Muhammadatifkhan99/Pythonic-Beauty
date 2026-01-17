@@ -1,25 +1,43 @@
-demo_list = [1,2,3,4,5,6,7,8,9]
+# demo_list = [1,2,3,4,5,6,7,8,9]
 
-print(demo_list)
-print("The total elements inside the list are: ",len(demo_list))
+#list is a fundamental data structure for organizing collections of items...
+
+#task = ["install python","Learn python","take a break"]
+
+# print(demo_list)
 
 #list() used to convert a range into a list or things like that
 
 # r = range(1,10)
 # print(r)
-
+#
 # print(list(r))
-
+#
 # print(list(range(1,11)))
 
-# l1 = ["atif","ali","khan","sahal","umair"]
+# list uses indexing for accessing values out
+# list can also have index error like going out of bound,
+#python can use negative indexes, so -1 starts at the end of the list and so on....
 
-# l2 = [1,2,3,4,5,6]
+
+l1 = ["atif","ali","khan","sahal","umair"]
+# print("a" in l1)
+#
+# if "atif" in l1:
+#     print("Atif is leading")
+
+
+l2 = [1,2,3,4,5,6]
 #the while loop allow us to have access to the loop counter variable but the for loop does not
-# i = 0;
-# while i<len(l1):
-#     print(f"{i}: {l1[i]}")
-#     i += 1
+
+# for num in l1:
+#     print(num)
+
+
+i = 0;
+while i<len(l1):
+    print(f"{i}: {l1[i]}")
+    i += 1
 #append adds one value to the list specified
 # l1.append("lala")
 
@@ -189,3 +207,16 @@ print("The total elements inside the list are: ",len(demo_list))
 # words = ["Coding","is","Fun"]
 #
 # print(" ".join(words))
+
+
+#finding the sum of values inside a list
+
+num = [2,3,4,2,4,5,4,5,3]
+
+i = 0
+sum = 0
+while i<len(num):
+    sum = sum + num[i]
+    i+= 1
+
+print(sum)
