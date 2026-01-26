@@ -2,7 +2,7 @@ num = [1,2,3]
 
 # print([x*10 for x in num])
 
-#Looping 
+#Looping
 numbers = [1,2,3,4,5]
 doubled_numbers = []
 
@@ -93,4 +93,6 @@ print([["X" if num % 2 != 0 else "O" for num in range(1,4)] for val in range(1,4
 
 
 
+
+print([["*" for i in range(1,4)] for val in range(1,6)])
 
