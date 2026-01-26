@@ -20,25 +20,25 @@
 #python can use negative indexes, so -1 starts at the end of the list and so on....
 
 
-l1 = ["atif","ali","khan","sahal","umair"]
+# l1 = ["atif","ali","khan","sahal","umair"]
 # print("a" in l1)
 #
 # if "atif" in l1:
 #     print("Atif is leading")
 
 
-l2 = [1,2,3,4,5,6]
+# l2 = [1,2,3,4,5,6]
 #the while loop allow us to have access to the loop counter variable but the for loop does not
 
 # for num in l1:
 #     print(num)
 
 
-i = 0;
-while i<len(l1):
-    print(f"{i}: {l1[i]}")
-    i += 1
-#append adds one value to the list specified
+# i = 0;
+# while i<len(l1):
+#     print(f"{i}: {l1[i]}")
+#     i += 1
+#append adds one value to the list specified, if a new list is appended the whole list will be inserted as it is.
 # l1.append("lala")
 
 # while i<len(l1):
@@ -46,7 +46,7 @@ while i<len(l1):
 #     i += 1
 
 
-#extend add all the values to the list
+#extend add all the values to the list, add them individual values rather than as a list like append
 # l1.extend(["a","b","c","d"])
 
 # while i<len(l1):
@@ -56,7 +56,7 @@ while i<len(l1):
 
 #inserting int a list values
 
-# l1.insert(len(l1),"Muhammad")
+# l1.insert(len(l1),"Muhammad") insert value at the end of the list then....
 
 # while i<len(l1):
 #     print(f"{i}: {l1[i]}")
@@ -70,7 +70,7 @@ while i<len(l1):
 #     print(f"{i}: {l1[i]}")
 #     i += 1
 
-# l1 = ["atif","ali","khan","sahal","umair"]
+l1 = ["atif","ali","khan","sahal","umair"]
 
 
 # print("The last element is popped up: ",l1.pop()) # removes the last element by default and if index was passed removes the element at the index.
@@ -79,17 +79,26 @@ while i<len(l1):
 #     print(f"{i}: {l1[i]}")
 #     i += 1
 
-# print(l1.index("sahal"))
+print(l1.index("sahal"))
+
+nums = [1,4,5,6,5]
+
+print(nums.index(5,3)) #search 5 after the index of 3
+print(nums.count(0)) #if the count is zero or nothing 0 will be outputted
+
 
 # j = 0
 # while j <= len(l1):
 #     print(l1.index("sahal"))
 #     j += 1;
 
-# names = ["arya", "blue", "colt", "colt", "lena", "pablo", "selena"]
-# print("I am friend with ".join(names))
-
+# names = ["arya", "atif","blue", "colt", "colt", "lena", "pablo", "selena"]
 #
+# print("I am friend with ".join(names)) #this will put the I am friend with in between items of the list
+
+#join is a string method, used commonly to convert list into string
+
+# string slicingv
 # first_list = [1,2,3,4]
 #
 # print(first_list[3:])
@@ -98,7 +107,7 @@ while i<len(l1):
 # print(first_list[::-2])
 # print(first_list[0:2])
 # print(first_list[:])
-#
+# #
 # string = "This is fun"
 # print(string[::-1])
 #
@@ -211,12 +220,12 @@ while i<len(l1):
 
 #finding the sum of values inside a list
 
-num = [2,3,4,2,4,5,4,5,3]
-
-i = 0
-sum = 0
-while i<len(num):
-    sum = sum + num[i]
-    i+= 1
-
-print(sum)
+# num = [2,3,4,2,4,5,4,5,3]
+#
+# i = 0
+# sum = 0
+# while i<len(num):
+#     sum = sum + num[i]
+#     i+= 1
+#
+# print(sum)
