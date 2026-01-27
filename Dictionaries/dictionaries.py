@@ -21,11 +21,17 @@ dictsion["key"]
 # dictsion["nothing"] #return keyError
 
 #Accessing all values in a dictionary
+print("dict items in dictionaries")
+print(instructor.values())
+print(instructor.keys())
+print(instructor.items())
+
+
 for value in instructor.values():
     print(value)
 
 #Accessing all keys in a dictionary
-for value in instructor.keys():
+for k in instructor.keys():
     print(value)
 
 
@@ -76,10 +82,13 @@ print(instructor.get('name'),instructor.get("email")) #if a key is not present w
 
 
 ###############################################################////POP##############
+#pop takes in the key of the dictionary and removes the corresponding value from it, returns the actual value.
 
 print(instructor.pop("owns_dog")) #takes in a key and remove the corresponding value from it, returns the actual value.
 
-
+d22 = {"name":"ali"}
+# print(d22.popitem()) #no item specified so a random one will be removed
+print(d22.pop("name"))
 
 
 
