@@ -1,5 +1,6 @@
 #a data structure that consist of key value pairs
 #keys are use to describe data and the values represent them
+from functools import total_ordering
 
 instructor = {
     "name" : "Atif",
@@ -96,6 +97,9 @@ print(d22.pop("name"))
 #removes a random value from the dictionary
 #no key is provided just picks a random number and removes that
 print(instructor.popitem())
+#updateitem removes a random key value pair from the dictionary
+
+
 
 
 
@@ -107,12 +111,32 @@ print(person)
 print(instructor)
 
 person.update(instructor) #the values of the person dictionaries are added to the instructor dictionaries
+#the person dictionary is updated with the instructor values.
+
 
 print(person) # person is modified
 print(instructor) #while instructor will be the same as it is.
 
 person["name"] = "Ali"
 print(person)
+
+
+#modelling a spotify playlist
+
+playlist = {
+    "title": "summer vibes",
+    "author": "atif khan",
+    "songs": [
+        {"title": "song1", "artist": ["artist1"], "duration": 2.5},
+        {"title": "song2", "artist": ["artist2"], "duration": 3.0},
+        {"title": "song3", "artist": ["artist3"], "duration": 2.0}
+    ]
+}
+total_duration = 0
+for song in playlist["songs"]:
+    total_duration = total_duration + song["duration"]
+print(total_duration)
+
 
 
 
@@ -138,3 +162,34 @@ print({k.upper(): v.upper() for k,v in instructor.items()})
 nums_list = [1,2,3,4,5,6,7,8]
 
 print({num:("even" if num % 2 == 0 else "odd") for num in nums_list})
+
+# print({num:("even" if num % 2 == 0 else "odd") for num in range(1,100)})
+
+
+
+
+#EXCERCISES
+
+#1.
+list1 = ["CA", "NJ", "RI"]
+list2 = ["California", "New Jersey", "Rhode Island"]
+answer  = {list1[i]:list2[i] for i in range(0,len(list2))}
+print(answer)
+
+#2.
+person =  [["name", "Jared"], ["job", "Musician"], ["city", "Bern"]]
+things0 = {k:v for k,v in person}
+things = dict(person)
+print(things0)
+print(things)
+
+print({p[0]:p[1] for p in person})
+
+#3.
+ascii = {i:chr(i) for i in range(65,91)}
+print(ascii)
+
+
+
+
+
