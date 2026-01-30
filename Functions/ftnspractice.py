@@ -1,4 +1,7 @@
 #functions allows us to organize things
+#think of functions as a set of instructions that can be reused
+#think of functions as a block of code that can be called multiple times
+#think of functions as a bunch of lines of code wrapped up into a nice little package.
 
 # def name_of_function():
 #     print("Hello")
