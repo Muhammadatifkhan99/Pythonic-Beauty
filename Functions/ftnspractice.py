@@ -43,10 +43,30 @@ print(exponent(2,3))
 print(exponent(2,3))
 print(exponent(4,4))
 
-#default parameters always needs to be in the end of the function definition other wise it will confuse python
+#default parameters always needs to be in the end of the function definition otherwise it will confuse python
+
+
+#parameters
+print("Functions Parameters")
+def square(k):
+    return k*k;
+
+print(square(2))
+
+
+print("Functions Parameters Ends")
+
 
 
 #KEYWORD ARGUMENTS-----useful if you know the names of the parameters
+print("Keyword Arguments")
+
+
+def full_name(first,last):
+    return f"Your name is {first} {last}"
+
+print(full_name(first="Atif",last="Khan"))
+
 
 squaure = exponent(power=2,num=10)
 print(squaure)
@@ -76,7 +96,7 @@ print(squaure)
 #DOC STRING
 
 def say_hello():
-    """this function will print hello world to the consol"""
+    """this function will print helloworld to the consol"""
     print("hello")
 
 print(say_hello.__doc__)
