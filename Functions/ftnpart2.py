@@ -27,6 +27,14 @@ def fav_color(**kwargs):
 fav_color(colt="red",ruby="purple",ethel="black")
 
 
+#LOOPING THRU KWARGS
+print("Looping through kwargs".upper())
+def fav_color(**people):
+    for name,color in people.items():
+        print(f"{name}'s lovely color is {color}")
+
+fav_color(colt="red",ruby="purple",ethel="black")
+
 #PARAMETER ORDERING
 
 #THE FOLLOWING ORDER SHOULD BE FOLLOWED BY PARAMETERS PASSED INTO FUNCTIONS
