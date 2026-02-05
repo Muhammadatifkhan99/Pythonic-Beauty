@@ -38,12 +38,10 @@ fav_color(colt="red",ruby="purple",ethel="black")
 #PARAMETER ORDERING
 
 #THE FOLLOWING ORDER SHOULD BE FOLLOWED BY PARAMETERS PASSED INTO FUNCTIONS
-
 # 1. parameters
 # 2. *args
 # 3. default parameters
 # 4. **kwargs
-
 
 #ARGUMENTS UNPACKING-----------------TUPLE UNPACKING----------------------
 
@@ -51,12 +49,23 @@ fav_color(colt="red",ruby="purple",ethel="black")
 
 def sum_of_all_nums2(*args):
     sum = 0
-#     for num in args:
-#         sum += num
-#     return sum
+    for num in args:
+        sum += num
+    return sum
 
 
-# nums = [1,2,3,4,5]
+nums = [1,2,3,4,5]
+nums1 = (1,2,3,4,5)
+print(sum_of_all_nums2(*nums))
+print(sum_of_all_nums2(*nums1))
+
+
+
+
+
+
+
+
 # #this dircelty passing the list to the function, will result in error
 # print(sum_of_all_nums2(nums))
 # #this syntax allows unpacking vlaues from a list
@@ -72,5 +81,12 @@ names = {"first":"Ali","second":"Khan"}
 # print(display_name(names))
 
 display_name(**names)  #dictionaries unpacking
+
+def add_and_multiply_numbers(a,b,c):
+    print( a+ b *c)
+
+data = dict(a=1,b=2,c=3)
+add_and_multiply_numbers(data)
+add_and_multiply_numbers(**data)
 
 
