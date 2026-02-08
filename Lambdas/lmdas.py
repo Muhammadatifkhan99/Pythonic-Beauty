@@ -4,15 +4,32 @@ print(square(2))
 lambda num: num * num
 #lambas are functions that have no names.
 #smiliar to anonymous functions in JS
+#lambda are one liners functions, it is a nameless function
 
 square2 = lambda num: num * num * num
+add = lambda a,b: a+b
 
 print(square2(1))
 
-
+print(square.__name__)
+print(square2.__name__)
+print(add.__name__)
 
 ##MAPs
 # a standard function that accept at least two arguments a function and an iterable
+#iterable->something that can be iterated over like a list,tuple,set etc
+#runs the lambda function on each element of the iterable and returns a new iterable of the same length containing the results.
+nums = [1,2,3,4,5]
+
+doubles = map(lambda x: x * 2, nums)
+print(list(doubles))
+print(list(doubles))
+
+people = ["Darcy","Christina","Dana","Annable"]
+
+peeps = map(lambda n: n.upper(),people)
+print(list(peeps))
+print(peeps)
 
 
 
