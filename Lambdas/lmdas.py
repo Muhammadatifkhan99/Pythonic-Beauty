@@ -42,6 +42,13 @@ evens = list(filter(lambda x: x % 2 == 0,l))
 
 print(evens)
 
+name = ["austin","penny","anthony","anbgel","billy"]
+
+a_names = filter(lambda n: n[0] == 'a',name)
+print(list(a_names))
+print(a_names)
+
+
 
 names = ["lassie","colt", "rusty"]
 
