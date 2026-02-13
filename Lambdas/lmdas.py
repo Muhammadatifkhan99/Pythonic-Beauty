@@ -109,11 +109,42 @@ print(sorted(nums,reverse=True))
 
 users = [
     {"username": "samuel", "tweets": ["I love cake", "I love pie"]},
-{"username": "katie", "tweets": []},
-{"username": "jeff", "tweets": [],"color":"purple"},
-{"username": "bob123", "tweets": [],"num":10,"color":"teal"},
-{"username": "doggo_luvr", "tweets": ["dogs are the best"]},
-{"username": "guitar_gal", "tweets": []}
+    {"username": "katie", "tweets": []},
+    {"username": "jeff", "tweets": [],"color":"purple"},
+    {"username": "bob123", "tweets": [],"num":10,"color":"teal"},
+    {"username": "doggo_luvr", "tweets": ["dogs are the best"]},
+    {"username": "guitar_gal", "tweets": []}
 ]
 print(sorted(users,key = lambda user: user["username"]))
 print(sorted(users,key=lambda user: len(user["tweets"]),reverse=True))
+
+
+print("MAX")
+
+print(max(3,67,888))
+print(max('a','b','d'))
+
+print(min(1,2,3))
+print(min('a','b','d'))
+
+
+name = ['Arya','Samson','Dora','Tim','Ollivander']
+print(min(name))
+print(min(n for n in name))
+print(min(len(n) for n in name))
+print((len(n) for n in name))
+
+print("REVERSED")
+
+nuns = [1,2,3,4]
+nuns.reverse()
+print(nuns)
+
+for c in reversed("hello world"):
+    print(c)
+
+
+print("LENGTH METHOD")
+print(len("ajdfl;akjdlf;jal;dfjal;skdjf;"))
+
+
