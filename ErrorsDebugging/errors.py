@@ -51,6 +51,17 @@
 # raise KeyError("baak baak")
 
 
+def colorize(text,color):
+    if type(text) is not str or type(color) is not str:
+        raise TypeError("text and color must be strings")
+    if color not in ["red","green","blue"]:
+        raise ValueError("color must be one of red, green or blue")
+    print(f"{text} is {color}")
+
+colorize("hello","red")
+colorize(23,"red")
+colorize(12,13)
+
 
 
 #Try and Except Block
