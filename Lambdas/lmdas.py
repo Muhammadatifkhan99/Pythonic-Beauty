@@ -147,4 +147,16 @@ for c in reversed("hello world"):
 print("LENGTH METHOD")
 print(len("ajdfl;akjdlf;jal;dfjal;skdjf;"))
 
+print("ZIP Basics")
+#the zip returns an iterator
+# returns a list of tuples where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
 
+
+
+n1 = [1,2,3,4]
+n2 = [4,5,6,7]
+s1 = ['haha','baba','dada','fafa']
+s2 = ['haha','baba','dada','fafa','kaka']
+
+z = list(zip(n1,n2,s1))
+print(z)
