@@ -58,9 +58,9 @@ def colorize(text,color):
         raise ValueError("color must be one of red, green or blue")
     print(f"{text} is {color}")
 
-colorize("hello","red")
-colorize(23,"red")
-colorize(12,13)
+# colorize("hello","red")
+# colorize(23,"red")
+# colorize(12,13)
 
 
 
@@ -75,7 +75,7 @@ except:
 
 print("after the problme")
 
-
+#except catches every error
 
 # TRY/EXCEPT/ELSE/FINALLY BLOCKS OF CODE
 
@@ -88,8 +88,14 @@ print("after the problme")
 # finally: #finally will run no matter whats the problem
 #     # print("No matter what I will run")
 
+def get(d,key):
+    try:
+        return d[key]
+    except KeyError:
+        return None
 
-
+d = {"name":"atif"}
+print(get(d,"city"))
 def dividby(a,b):
     try:
         return a/b
