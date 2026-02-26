@@ -1,4 +1,6 @@
 #ERRORS
+from MakingHTTPRequest.dad import resutls
+
 
 # 1. Syntax Errors
 
@@ -51,59 +53,34 @@
 # raise KeyError("baak baak")
 
 
-def colorize(text,color):
-    if type(text) is not str or type(color) is not str:
-        raise TypeError("text and color must be strings")
-    if color not in ["red","green","blue"]:
-        raise ValueError("color must be one of red, green or blue")
-    print(f"{text} is {color}")
-
-# colorize("hello","red")
-# colorize(23,"red")
+# def colorize(text,color):
+#     if type(text) is not str or type(color) is not str:
+#         raise TypeError("text and color must be strings")
+#     if color not in ["red","green","blue"]:
+#         raise ValueError("color must be one of red, green or blue")
+#     print(f"{text} is {color}")
 # colorize(12,13)
 
 
 
-#Try and Except Block
+import pdb
 
-#strongly recommended to use try/except block to catch execeptions when we can do something about it.
+first = "first"
+second = "second"
+pdb.set_trace()
+result = first + second
+third = "third"
+result += third
+print(result)
 
-try:
-    foobar
-except:
-    print("problem")
+#import pdb; pdb.set_trace() commonly used on oneline
 
-print("after the problme")
+#common PDB Commands:
+# p: print
+# l: list
+# n: next
+# s: step
+# c: continue
+# q: quit
 
-#except catches every error
-
-# TRY/EXCEPT/ELSE/FINALLY BLOCKS OF CODE
-
-# try: #try will try to do something
-#     # num = int(input("Enter a number: "))
-# except: #if there is a problem this runs
-#     # print("Please enter a number")
-# else: #if there is not a problem else will also run
-#     # print("I'm the else block")
-# finally: #finally will run no matter whats the problem
-#     # print("No matter what I will run")
-
-def get(d,key):
-    try:
-        return d[key]
-    except KeyError:
-        return None
-
-d = {"name":"atif"}
-print(get(d,"city"))
-def dividby(a,b):
-    try:
-        return a/b
-    except ZeroDivisionError as ZDe:
-        print(ZDe)
-
-print(dividby(1,2))
-print(dividby(1,0))
-
-
-
+#if a variable name are same with pdb command use it like this, p and then the command so print and the command
