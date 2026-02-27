@@ -24,7 +24,6 @@
 
 from __future__ import annotations
 
-import io
 import os
 import sys
 from functools import cache
@@ -38,6 +37,7 @@ if TYPE_CHECKING:
 ATTRIBUTES: dict[str, int] = {
     "bold": 1,
     "dark": 2,
+    "italic": 3,
     "underline": 4,
     "blink": 5,
     "reverse": 7,
@@ -90,7 +90,7 @@ RESET = "\033[0m"
 
 
 @cache
-def _can_do_colour(
+def can_colorize(
     *, no_color: bool | None = None, force_color: bool | None = None
 ) -> bool:
     """Check env vars and for tty/dumb terminal"""
@@ -121,7 +121,7 @@ def _can_do_colour(
 
     try:
         return os.isatty(sys.stdout.fileno())
-    except io.UnsupportedOperation:
+    except OSError:
         return sys.stdout.isatty()
 
 
@@ -150,7 +150,7 @@ def colored(
     be specified via a tuple of 0-255 ints (R, G, B).
 
     Available attributes:
-        bold, dark, underline, blink, reverse, concealed.
+        bold, dark, italic, underline, blink, reverse, concealed, strike.
 
     Example:
         colored('Hello, World!', 'red', 'on_black', ['bold', 'blink'])
@@ -158,7 +158,7 @@ def colored(
         colored('Hello, World!', (255, 0, 255))  # Purple
     """
     result = str(text)
-    if not _can_do_colour(no_color=no_color, force_color=force_color):
+    if not can_colorize(no_color=no_color, force_color=force_color):
         return result
 
     fmt_str = "\033[%dm%s"

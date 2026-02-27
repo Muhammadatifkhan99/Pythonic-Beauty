@@ -3,9 +3,10 @@
 #keep python files small
 
 
-import random
+import random as rand
 
-print(random.choice(["apple", "banana", "cherry", "durian"]))
+
+print(rand.choice(["apple", "banana", "cherry", "durian"]))
 
 
 
@@ -15,4 +16,6 @@ print(random.choice(["apple", "banana", "cherry", "durian"]))
 
 from  random import choice,shuffle,randint
 
-print(random.choice(["apple","banana","cherry","durain"]))
+print(rand.choice(["apple","banana","cherry","durain"]))
+print(randint(1,100))
+
