@@ -22,3 +22,21 @@ elif num_joke == 1:
 else:
     print("There is no joke")
 # print(res)
+
+# HTTP VERBS
+# 1. GET Requests
+# useful for retrieving data, going to google.com etc
+# Data is passed in query string, no side effects
+# can be cached, can be bookmarked
+# 2. Post Requests
+# useful for submitting data, like submitting a comment on reddit, sending something to a server
+# data is passed in the request body, all sort of data, photos, etc
+# can have side effects
+#cannot be cached or bookmarked
+
+
+#API-> Application Programming Interface
+# allow you to get data from another application without needing to understand how the application works
+#
+
+
