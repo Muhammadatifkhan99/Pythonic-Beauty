@@ -9,6 +9,9 @@ user_query = input("What would like for the day? ")
 
 url1 = "https://icanhazdadjoke.com/search"
 
+# Accept : text/html -> this will give you the all html of the page
+# Accept : text/plain -> this will give you the plain text of the page
+
 res = requests.get(url1, headers={"Accept" : "application/json"}, params={"term" : user_query}).json()
 
 num_joke = res["total_jokes"]
