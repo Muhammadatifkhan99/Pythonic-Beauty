@@ -19,11 +19,13 @@
 # __name__ -> dunder methods
 
 class Person:
+    active_users = 0
     def __init__(self):
         self.name = "Atif"
         self._age = 15 #python way of defing private variable, it can be accessed outside the class not restriction but just a notation
         self.__msg = "Hello"
         self.__lol = "HAHAHAHA"
+        Person.active_users = +1
 
 p = Person()
 
@@ -32,3 +34,9 @@ print(p._age)
 print(dir(p))
 print(p._Person__lol)
 print(p._Person__msg)
+
+
+# class Attributes
+# we can define a class attributes directly on a class that are shared by all the instances of a class
+# and the class itself
+print(Person.active_users)
